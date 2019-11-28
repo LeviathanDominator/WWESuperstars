@@ -1,0 +1,46 @@
+.championships{
+    min-height: 100vh;
+}
+
+ul {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: black;
+  flex-wrap: wrap;
+}
+
+li {
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  max-width: 18em;
+  margin: 1em;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: transform .2s;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+img {
+  max-width: 100%;
+  transition: all .2s;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+button {
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 1em;
+}
+
+button:hover {
+  text-decoration: underline;
+}

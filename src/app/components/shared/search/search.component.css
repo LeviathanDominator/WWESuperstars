@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+}
+
+h3 {
+  margin-top: 5em;
+  color: white;
+  text-align: center;
+}
+
+ul {
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

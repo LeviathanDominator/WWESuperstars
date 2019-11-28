@@ -1,0 +1,43 @@
+<nav>
+    <ul>
+      <li>
+        <a [routerLink]="['home']"><img src="assets/img/favicon.ico"></a>
+      </li>
+      <li routerLinkActive="active">
+        <a class="option" [routerLink]="['home']">Inicio</a>
+      </li>
+      <li *ngIf="loggedIn()" routerLinkActive="active">
+        <a class="option" [routerLink]="['superstars']">Superstars</a>
+      </li>
+      <li *ngIf="loggedIn()" routerLinkActive="active">
+        <a class="option" [routerLink]="['championships']">Títulos</a>
+      </li>
+      <li *ngIf="loggedIn()" routerLinkActive="active">
+        <a class="option" [routerLink]="['shows']">Marcas</a>
+      </li>
+      <li *ngIf="loggedIn()" routerLinkActive="active">
+        <a class="option" [routerLink]="['champions']">Campeones</a>
+      </li>
+      <li *ngIf="!loggedIn()" routerLinkActive="active">
+        <a class="option" [routerLink]="['login']">Iniciar sesión</a>
+      </li>
+      <li *ngIf="!loggedIn()" routerLinkActive="active">
+        <a class="option" [routerLink]="['signup']">Registrarse</a>
+      </li>
+      <li *ngIf="loggedIn()" routerLinkActive="active">
+        <a class="option" (click)="exitSession()">Cerrar sesión</a>
+      </li>
+      <li *ngIf="loggedIn()" style="float:right">
+        <form>
+          <select (change)="changeSearchOption(searchOption.value)" #searchOption>
+            <option value="superstar">Superstar</option>
+            <option value="faction">Equipo</option>
+            <option value="championship">Campeonato</option>
+            <option value="show">Marca</option>
+          </select>
+          <input type="search" placeholder="Buscar" aria-label="Search" (keyup.enter)="searchSuperstar(search.value)" #search>
+          <button type="submit" (click)="searchSuperstar(search.value)">Buscar</button>
+        </form>
+      </li>
+    </ul>
+</nav>

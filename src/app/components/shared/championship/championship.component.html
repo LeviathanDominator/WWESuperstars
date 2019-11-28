@@ -1,0 +1,5 @@
+<div [ngStyle]="{'background': 'linear-gradient(' + championship.show.colorButton + ', ' + championship.show.color + ')'}">
+  <img [src]="championship.image">
+  <h2>{{ championship.name | uppercase }} CHAMPIONSHIP</h2>
+  <button [ngStyle]="{'background-color': championship.show.colorButton, 'border-color': championship.show.colorButton}" class="return" (click)="return()">Volver</button>
+</div>

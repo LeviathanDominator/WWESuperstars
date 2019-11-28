@@ -1,0 +1,22 @@
+<div class="login">
+  <form (ngSubmit)="login(localForm)" #localForm="ngForm">
+    <h2>Es necesario iniciar sesión.</h2>
+    <div class="form-group">
+      <span *ngIf="localForm.submitted && localForm.controls['email'].errors" class="text-danger animated fadeIn">El correo es obligatorio</span>
+      <input type="email" class="form-control" name="email" [(ngModel)]="user.email" aria-describedby="emailHelp"
+      placeholder="Correo electrónico" required minlength="3" email>
+    </div>
+    <div class="form-group">
+      <span *ngIf="localForm.submitted && localForm.controls['password'].errors" class="text-danger animated fadeIn">La contraseña es demasiado corta</span>
+      <input type="password" class="form-control" name="password" [(ngModel)]="user.password"
+      placeholder="Password" required minlength="6" password>
+    </div>
+    <div class="form-group form-check">
+      <input [(ngModel)]="rememberMe" name="rememberMe" type="checkbox" class="form-check-input" id="rememberMe">
+      <label class="form-check-label" for="rememberMe">Recordarme</label>
+      <a routerLink="/signup">¿No tienes cuenta?</a>
+    </div>
+    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+  </form>
+  <img [src]="image">
+</div>

@@ -1,0 +1,105 @@
+.frontPage {
+  display: grid;
+  min-height: 100vh;
+  padding: 2em;
+  width: 100%;
+  background-image: url(../../../../assets/img/home_background.png);
+  background-size: 110%;
+  background-position: top;
+}
+
+.desc {
+  grid-column: 1;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+ul {
+  text-align: left;
+}
+
+li {
+  margin: 1em;
+}
+
+.logo {
+  height: 2em;
+  max-width: 4em;
+  transition: all .2s;
+}
+
+.logo:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 0px 3px white);
+  filter: drop-shadow(0px 0px 3px white);
+}
+
+.card {
+  grid-column: 2;
+  padding: .05em;
+  display: grid;
+  grid-template-columns: 70% auto;
+  text-align: center;
+  box-shadow: 7px 7px 5px black;
+  margin: auto;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.superstarImg {
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: black;
+  grid-column: 1;
+  max-width: 100%;
+  margin: auto;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-column: 2;
+}
+
+.cardBody img {
+  max-width: 80%;
+}
+
+h3 {
+  color: white;
+  font-size: 1.6em;
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.04em;
+  -webkit-text-stroke-color: black;
+}
+
+button {
+  margin: 1em;
+  padding: 0.6em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.shows {
+  margin-right: auto;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 0.5em;
+  display: inline-block;
+  background: rgba(0,0,0, 0.5);
+  transition: all .2s ease;
+}
+
+.shows:hover {
+  transform: scale(1.1);
+  background-color: black;
+}

@@ -1,0 +1,16 @@
+<ul>
+  <ng-container *ngFor="let championship of championships; let i = index">
+    <li [ngStyle]="{'background-image': 'url(' + championship.show.backgroundFull + ')', 'background-size': '100% 150%', 'background-position': 'center'}" >
+      <h3>{{ getChampionshipName(i) }} Championship</h3>
+      <img class="title" [src]="getChampionshipImage(i)" (click)="goToChampionship(championship)" [title]="getChampionshipName(i) + ' Championship'" [alt]="getChampionshipName(i) + ' Championship'">
+      <div class="superstars">
+        <ng-container *ngFor="let superstar of championship.champions">
+          <div (click)="goToSuperstar(superstar)" class="superstar">
+            <h5><ng-container *ngIf="superstar.nickname != undefined">{{ '"' + superstar.nickname + '"' }} </ng-container>{{ getSuperstarName(superstar) }}</h5>
+            <img [src]="getSuperstarImage(superstar)" [title]="getSuperstarName(superstar)" [alt]="getSuperstarName(superstar)">
+          </div>
+        </ng-container>
+      </div>
+    </li>
+  </ng-container>
+</ul>

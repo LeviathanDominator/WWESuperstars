@@ -1,0 +1,56 @@
+ul {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0.5em;
+  max-width: 18em;
+  color: white;
+  border-radius: 1em;
+  border-width: 1px;
+  border-style: solid;
+  transition: transform .2s;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+li div {
+  min-width: 0;
+}
+
+h3 {
+  margin-top: 1em;
+  text-shadow: 1px 1px 5px black;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.title {
+  margin-bottom: auto;
+}
+
+.superstars {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  transition: all .2s;
+}
+
+img:hover {
+  -webkit-filter: drop-shadow(0px 0px 3px white);
+  filter: drop-shadow(0px 0px 3px white);
+}

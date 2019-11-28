@@ -1,0 +1,5 @@
+<h3 *ngIf="searchResults.length == 0">No se ha encontrado ningún resultado para "{{ word }}"</h3>
+<ul>
+  <app-superstar-card [superstar]="superstar" [index]="i" *ngFor="let superstar of searchResults; let i = index">
+  </app-superstar-card>
+</ul>

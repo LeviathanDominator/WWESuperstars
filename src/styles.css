@@ -1,0 +1,12 @@
+body {
+  background-color: gray;
+  background-image: url(assets/img/background.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+button {
+  color: white;
+  text-shadow: 1px 1px black;
+  border-radius: .8em;
+}

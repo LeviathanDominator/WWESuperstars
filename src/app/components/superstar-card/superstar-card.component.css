@@ -1,0 +1,38 @@
+li {
+  margin: 1em;
+  color: white;
+  box-shadow: 7px 7px 5px black;
+  transition: transform .2s;
+  filter: saturate(red);
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+h4, p {
+  font-weight: bold;
+  -webkit-text-stroke-color: black;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-family: sans-serif;
+  -webkit-text-stroke-width: 0.04em;
+}
+
+p {
+  -webkit-text-stroke-width: 0.7px;
+}
+
+button {
+  padding: 0.6em;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  background-color: black;
+  border-color: white;
+}
+
+button:hover {
+  text-decoration: underline;
+}

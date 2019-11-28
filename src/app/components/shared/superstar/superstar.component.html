@@ -1,0 +1,30 @@
+<div class="main-card">
+  <h5 [ngStyle]="{'color': superstar.show.colorButton}"><ng-container *ngIf="superstar.nickname != undefined">{{ '"' + superstar.nickname + '"' | uppercase }} </ng-container>{{ superstar.name | uppercase }}</h5>
+  <img class="logo" (click)="goToShow()" [title]="superstar.show.name" [alt]="superstar.show.name" [src]="superstar.show.logo">
+  <img (mouseover)="letHimIn()" class="superstarImage" [src]="superstar.imgFull"  [title]="superstar.name" [alt]="superstar.name" [ngStyle]="{'background-image': 'url(' + superstar.show.backgroundFull + ')', 'background-size': '100% 100%', 'background-position': 'center'}" >
+  <div>
+    <div class="title" *ngIf="isChampion()">
+      <ng-container *ngFor="let championship of championships">
+        <div>
+          <h2>{{ championship.name }} Champion</h2>
+          <img class="titleSmall" (click)="goToChampionship(championship)" [src]="championship.image"  [title]="championship.name + ' Championship'" [alt]="championship.name + ' Championship'">
+        </div>
+      </ng-container>
+    </div>
+    <div class="cardBody">
+      <ul [ngStyle]="{'background-color': superstar.show.color, 'border-color': superstar.show.colorButton}">
+        <li>Superstar de {{ superstar.show.name }}</li>
+        <li>Fecha de debut: {{ superstar.debut }}</li>
+        <li>Procedente de {{ superstar.hometown }}</li>
+        <li>Altura: {{ superstar.height }} m</li>
+        <li>Peso: {{ superstar.weight }} kg ({{ getWeightClass() }})</li>
+        <li>Movimiento personal: {{ superstar.finisher }}</li>
+        <li *ngIf="superstar.faction">Miembro de {{ superstar.faction }}</li>
+      </ul>
+      <img *ngIf="superstar.logo" [src]="superstar.logo"  [title]="'Logotipo de ' + superstar.name" [alt]="'Logotipo de ' + superstar.name">
+    </div>
+    <h4>Tema de {{ superstar.name }}</h4>
+    <iframe width="560" height="315" [src]="safeURL" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <button [ngStyle]="{'background-color': superstar.show.colorButton, 'border-color': superstar.show.colorButton}" class="return" (click)="return()">Volver</button>
+</div>

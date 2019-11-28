@@ -1,0 +1,5 @@
+<button (click)="filterByShow()">Marca: {{ getShowFilterName() }}</button>
+<ul>
+  <app-superstar-card [superstar]="superstar" [index]="i" *ngFor="let superstar of superstars; let i = index">
+  </app-superstar-card>
+</ul>

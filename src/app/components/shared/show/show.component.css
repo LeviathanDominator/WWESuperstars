@@ -1,0 +1,80 @@
+.main {
+  border-style: solid;
+  border-radius: 2em;
+  border-width: 2px;
+  padding: 2em;
+  margin: 3em;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgb(56, 56, 56), rgb(205, 207, 204));
+  -webkit-filter: drop-shadow(0px 0px 3px white);
+  filter: drop-shadow(0px 0px 3px white);
+}
+
+.info {
+  border-radius: 1em;
+  border-style: solid;
+  max-width: 65%;
+  margin: 1em;
+  padding: 1em;
+}
+
+.data {
+  display: flex;
+}
+
+.logo {
+  margin: auto;
+  max-height: 15em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.photos {
+  text-align:center;
+  margin: 1em;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 1em;
+  max-height: 25em;
+  overflow: hidden;
+}
+
+.photos img {
+  height: 100%;
+  min-width: 100%;
+  margin: 0 -120%;
+}
+
+.championships {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.championship {
+  margin: auto;
+}
+
+.championship img {
+  width: 105%;
+  transition: all 1s;
+  max-height: 15em;
+}
+
+.championship img:hover{
+  transform: scale(1.1);
+  -webkit-filter: drop-shadow(0px 0px 7px rgb(255, 238, 0));
+  filter: drop-shadow(0px 0px 7px rgb(255, 238, 0));
+}
+
+button {
+  margin: auto;
+  display: inline-block;
+}
+
+button:hover {
+  text-decoration: underline;
+}

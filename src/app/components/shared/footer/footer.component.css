@@ -1,0 +1,17 @@
+footer {
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgb(74, 74, 74), rgb(20, 20, 20));
+  box-shadow: 0px 0px 2em black;
+}
+
+footer img {
+  margin-left: 0.4em;
+  max-width: 1.5em;
+  transition: transform 6s;
+}
+
+footer img:hover {
+  transform: rotate(6050deg);
+}

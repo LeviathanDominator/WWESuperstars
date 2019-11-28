@@ -1,0 +1,20 @@
+<div class="main" [ngStyle]="{'border-color': show.colorButton}">
+  <img class="logo" [src]="show.logo" [alt]="show.name" [title]="show.name">
+  <div class="data">
+      <div class="info" [ngStyle]="{'background-color': show.color, 'border-color': show.colorButton}">
+        <p *ngFor="let description of show.desc">{{ description }}</p>
+        <p>Número de superestrellas: {{ getNumberOfSuperstars() }}</p>
+      </div>
+      <div [ngStyle]="{'border-color': show.colorButton}" class="photos">
+        <img [src]="show.photo" [alt]="show.name" [title]="show.name">
+      </div>
+  </div>
+  <h2>Campeonatos</h2>
+  <div class="championships">
+    <div class="championship" *ngFor="let championship of championships">
+      <p> {{championship.name}} Championship </p>
+      <img (click)="goToChampionship(championship)" [src]="championship.image" [alt]="championship.name + ' Championship'" [title]="championship.name + ' Championship'">
+    </div>
+  </div>
+  <button [ngStyle]="{'background-color': show.colorButton, 'border-color': show.colorButton}" class="return" (click)="return()">Volver</button>
+</div>

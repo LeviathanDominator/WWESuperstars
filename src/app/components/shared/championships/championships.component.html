@@ -1,0 +1,16 @@
+<div class="championships">
+  <ul>
+    <li *ngFor="let championship of championships; let i = index" [ngStyle]="{'background': 'linear-gradient(' + championship.show.colorButton + ', ' + championship.show.color + ')', 'border-color': championship.show.colorButton}">
+      <img [ngStyle]="{'background-image': 'url(' + championship.show.backgroundFull + ')', 'background-size': '120% 100%', 'background-position': 'center'}" [src]="championship.image" [title]="championship.name + ' Championship'" [alt]="championship.name + ' Championship'">
+      <h4 (click)="goToChampionship(i)">{{ championship.name + ' Championship' }}</h4>
+        <p>
+          <ng-container *ngIf="championship.champions.length == 1">Campeón: </ng-container>
+          <ng-container *ngIf="championship.champions.length != 1">Campeones: </ng-container>
+          <ng-container *ngFor="let champion of championship.champions; let j = index"><small *ngIf="j != 0"> & </small>{{ champion.name }}</ng-container>
+        </p>
+      <button [ngStyle]="{'background-color': championship.show.colorButton, 'border-color': championship.show.colorButton}" (click)="goToChampionship(championship)" type="button">
+        Ver título
+      </button>
+    </li>
+  </ul>
+</div>

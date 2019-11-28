@@ -1,0 +1,12 @@
+<li *ngIf="filterByShow()">
+  <div class="card" style="width: 18rem;" [ngStyle]="{'border-color': superstar.show.colorButton}">
+    <img [ngStyle]="{'background-image': 'url(' + superstar.show.background + ')', 'background-size': '120% 100%', 'background-position': 'center'}" class="card-img-top" [src]="superstar.img"  [title]="superstar.name" [alt]="superstar.name">
+    <div [ngStyle]="{'background': 'linear-gradient(' + superstar.show.colorButton + ', ' + superstar.show.color + ')'}" class="card-body">
+      <h4 class="card-title">{{ superstar.name }}</h4>
+      <p class="card-text">{{ info() }}</p>
+      <button [ngStyle]="{'background-color': superstar.show.colorButton, 'border-color': superstar.show.colorButton}" (click)="goToSuperstar()" type="button">
+        Ver superstar
+      </button>
+    </div>
+  </div>
+</li>

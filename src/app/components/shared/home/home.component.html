@@ -1,0 +1,21 @@
+<div class="frontPage">
+  <div class="desc">
+    <h1>Superstars de WWE</h1>
+    <p>Los shows principales son RAW y SmackDown, donde compiten superestrellas de todos los tipos y tienen los eventos más importantes. El show de desarrollo se llama NXT, donde van las superestrellas nuevas a darse a conocer. Tiene una variante en Reino Unido llamado NXT UK con un estilo de wrestling centrado en llaves. Luego esta 205 Live, donde compiten las superestrellas de peso crucero con combates más frenéticos y espectaculares. Finalmente está la Hall of Fame, donde están listadas las superestrellas ya retiradas pero que marcaron un antes y un después en la historia de WWE.</p>
+    <p>Actualmente hay {{ superstars.length }} superestrellas en nuestra base de datos. El número de superestrellas por show son:</p>
+    <ul class="shows">
+      <li *ngFor="let show of _showService.getShows(); let i = index">{{ getNumberOfSuperstarsInShow(i) }} superestrellas de <img class="logo" (click)="goToShow(i)" [src]="show.logo" [title]="show.name" [alt]="show.name"></li>
+    </ul>
+  </div>
+  <div [ngStyle]="{'background': 'linear-gradient(90deg, ' + superstar.show.colorButton + ', ' + superstar.show.color + ')'}" class="card">
+    <img class="superstarImg" [ngStyle]="{'background-image': 'url(' + superstar.show.background + ')', 'background-size': '100% 100%'}" [src]="superstar.img"  [title]="superstar.name" [alt]="superstar.name">
+    <div class="cardBody">
+      <small>Superstar del día</small>
+      <h3>{{ superstar.name }}</h3>
+      <p><img [src]="superstar.show.logo" [title]="superstar.show.name" [alt]="superstar.show.name"></p>
+      <button [ngStyle]="{'background-color': superstar.show.colorButton, 'border-color': superstar.show.colorButton}" (click)="checkSuperstar(i)" type="button">
+        Ver superstar
+      </button>
+    </div>
+  </div>
+</div>
