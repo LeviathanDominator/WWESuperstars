@@ -1,5 +1,10 @@
 <div [ngStyle]="{'background': 'linear-gradient(' + championship.show.colorButton + ', ' + championship.show.color + ')'}">
-  <img [src]="championship.image">
-  <h2>{{ championship.name | uppercase }} CHAMPIONSHIP</h2>
+  <img [src]="championship.image" [title]="championship.name + ' Championship'" [alt]="championship.name + ' Championship'">
+  <h1>{{ championship.name | uppercase }} CHAMPIONSHIP</h1>
+  <div class="data" [ngStyle]="{'background-color': championship.show.color}">
+    <p>Fecha de creación: {{ championship.date }}</p>
+    <p><ng-container *ngIf="championship.champions.length == 1">Campeón: </ng-container><ng-container *ngIf="championship.champions.length != 1">Campeones: </ng-container><ng-container *ngFor="let champion of championship.champions; let i = index"><ng-container *ngIf="i != 0"> & </ng-container>{{ champion.name }}</ng-container></p>
+    <p><ng-container *ngIf="championship.champions.length == 1">Campeón inaugural: </ng-container><ng-container *ngIf="championship.champions.length != 1">Campeones inaugurales: </ng-container><ng-container *ngFor="let champion of championship.firstChampions; let i = index"><ng-container *ngIf="i != 0"> & </ng-container>{{ champion }}</ng-container></p>
+  </div>
   <button [ngStyle]="{'background-color': championship.show.colorButton, 'border-color': championship.show.colorButton}" class="return" (click)="return()">Volver</button>
 </div>

@@ -26,10 +26,6 @@ export class SuperstarsComponent implements OnInit {
     this._showService.filter = "Todos";
   }
 
-  goToSuperstar( index: number ){
-    this.router.navigate(['/superstar', index]);
-  }
-
   filterByShow(){
     this.filter++;
     if (this.filter > this._showService.getShows().length - 1){

@@ -1,7 +1,6 @@
 <div class="shows">
   <ul>
-    <li *ngFor="let show of shows; let i = index" [ngStyle]="{'background-image': 'url(' + show.background + ')', 'background-size': '130% 100%', 'background-position': 'center', 'border-color': show.colorButton}">
-      <button (click)="goToShow(i)" [ngStyle]="{'background-color': show.colorButton, 'border-color': show.colorButton}">Ver marca</button>
-    </li>
+    <app-show-card [show]="show" [index]="i" *ngFor="let show of shows; let i = index">
+    </app-show-card>
   </ul>
 </div>

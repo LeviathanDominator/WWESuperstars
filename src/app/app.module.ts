@@ -23,6 +23,7 @@ import { ChampionshipCardComponent } from './components/championship-card/champi
 import { ShowsComponent } from './components/shared/shows/shows.component';
 import { ShowComponent } from './components/shared/show/show.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { ShowCardComponent } from './components/show-card/show-card.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     ChampionshipCardComponent,
     ShowsComponent,
     ShowComponent,
-    FooterComponent
+    FooterComponent,
+    ShowCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,25 @@
+.shows{
+  min-height: 100vh;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1em;
+  padding-top: 12em;
+  padding-left: 9em;
+  padding-right: 9em;
+  transition: transform .2s;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+button {
+  padding: .6em;
+  margin-bottom: 2em;
+}

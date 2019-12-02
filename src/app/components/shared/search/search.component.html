@@ -1,5 +1,13 @@
 <h3 *ngIf="searchResults.length == 0">No se ha encontrado ningún resultado para "{{ word }}"</h3>
-<ul>
+<ul *ngIf="option == 'superstar' || option == 'faction'">
   <app-superstar-card [superstar]="superstar" [index]="i" *ngFor="let superstar of searchResults; let i = index">
   </app-superstar-card>
+</ul>
+<ul *ngIf="option == 'championship'">
+  <app-championship-card [championship]="championship" [index]="i" *ngFor="let championship of searchResults; let i = index">
+  </app-championship-card>
+</ul>
+<ul *ngIf="option == 'show'">
+  <app-show-card [show]="show" [index]="i" *ngFor="let show of searchResults; let i = index">
+  </app-show-card>
 </ul>

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShowService, Show } from 'src/app/services/show.service';
-import { Router } from '@angular/router';
+import { ShowService } from 'src/app/services/show.service';
 
 @Component({
   selector: 'app-shows',
@@ -11,15 +10,11 @@ export class ShowsComponent implements OnInit {
 
   shows: any[] = [];
 
-  constructor( private router: Router, private _showService: ShowService ) {
+  constructor( private _showService: ShowService ) {
     this.shows = this._showService.getShows();
   }
 
   ngOnInit() {
-  }
-
-  goToShow(index: string){
-    this.router.navigate(['/show', index]);
   }
 
 }

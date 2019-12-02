@@ -2003,6 +2003,80 @@ export class SuperstarsService {
       imgFull: "assets/img/superstars_full/jey_uso.png",
       logo: "assets/img/logo/the_usos.png",
       music: "2QSTIdiIIbc"
+    },
+    {
+      name: "Neville",
+      debut: 2004,
+      hometown: "Newcastle upon Tyne",
+      height: 1.75,
+      weight: 87,
+      finisher: "Red Arrow / Rings of Saturn",
+      show: this._showService.getShow("4"),
+      img: "assets/img/superstars/neville.png",
+      imgFull: "assets/img/superstars_full/neville.png",
+      music: "EyAq4aLvoRs"
+    },
+    {
+      name: "Heath Slater",
+      debut: 2004,
+      hometown: "Pineville, West Virginia",
+      height: 1.88,
+      weight: 97,
+      finisher: "Smash Hit",
+      show: this._showService.getShow("1"),
+      img: "assets/img/superstars/heath_slater.png",
+      imgFull: "assets/img/superstars_full/heath_slater.png",
+      music: "D2S_5y_bfA0"
+    },
+    {
+      name: "Rhyno",
+      debut: 1995,
+      hometown: "Detroit, Michigan",
+      height: 1.78,
+      weight: 134,
+      finisher: "Gore",
+      show: this._showService.getShow("1"),
+      img: "assets/img/superstars/rhyno.png",
+      imgFull: "assets/img/superstars_full/rhyno.png",
+      music: "D3jzGODEI74"
+    },
+    {
+      name: "TJP",
+      debut: 1999,
+      hometown: "Los Angeles, California",
+      height: 1.78,
+      weight: 81,
+      finisher: "Kneebar",
+      show: this._showService.getShow("4"),
+      img: "assets/img/superstars/tjp.png",
+      imgFull: "assets/img/superstars_full/tjp.png",
+      music: "xGKmLM4LJEE"
+    },
+    {
+      name: "Zack Gibson",
+      debut: 2009,
+      hometown: "Liverpool, Inglaterra",
+      height: 1.91,
+      weight: 82,
+      finisher: "Shankly Gates",
+      show: this._showService.getShow("3"),
+      faction: "Grizzled Young Veterans",
+      img: "assets/img/superstars/zack_gibson.png",
+      imgFull: "assets/img/superstars_full/zack_gibson.png",
+      music: "BZVzORkiAKc"
+    },
+    {
+      name: "James Drake",
+      debut: 2009,
+      hometown: "Blackpool, Lancashire",
+      height: 1.78,
+      weight: 82,
+      finisher: "Mr. Mayhem",
+      show: this._showService.getShow("3"),
+      faction: "Grizzled Young Veterans",
+      img: "assets/img/superstars/james_drake.png",
+      imgFull: "assets/img/superstars_full/james_drake.png",
+      music: "Ge9-7bcAw-o"
     }
   ];
 

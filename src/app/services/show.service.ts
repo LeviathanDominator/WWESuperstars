@@ -15,7 +15,7 @@ export class ShowService {
       colorButton: "rgb(255, 43, 43)",
       background: "assets/img/show_background/raw.jpg",
       backgroundFull: "assets/img/show_background/raw_full.jpg",
-      desc: ["También conocido como Monday Night Raw, se lleva transmitiendo sin interrupciones desde el 11 de enero de 1993 hasta la fecha, desde Estados Unidos por medio de la cadena USA Network. Se emite todos los lunes.\n\nRAW es, junto con SmackDown, uno de los shows más importantes de WWE, donde se encuentran las mejores superestrellas y organizan los eventos más imporantes del año, como Wrestlemania, Survivor Series, Royal Rumble y Summerslam."]
+      desc: ["También conocido como \"Monday Night Raw\", se lleva transmitiendo sin interrupciones desde el 11 de enero de 1993 hasta la fecha, desde Estados Unidos por medio de la cadena USA Network. Se emite todos los lunes.\n\nRAW es, junto con SmackDown, uno de los shows más importantes de WWE, donde se encuentran las mejores superestrellas y organizan los eventos más imporantes del año, como Wrestlemania, Survivor Series, Royal Rumble y Summerslam."]
     },
     {
       name: "SmackDown",
@@ -25,7 +25,7 @@ export class ShowService {
       colorButton: "rgb(100, 139, 255)",
       background: "assets/img/show_background/smackdown.jpg",
       backgroundFull: "assets/img/show_background/smackdown_full.jpg",
-      desc: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."]
+      desc: ["También conocido como \"Friday Night SmackDown\", empezó a transmitirse desde el 29 de abril de 1999. Originalmente fue creado para competir con el programa Thunder de la WCW, su competencia en ese momento, que en su momento era conocido como \"WWF SmackDown!\". Consistía en dos horas de Divas (nombre que tenían las luchadoras en ese entonces), pero al no funcionar se convirtió en un programa que sería para complementar a RAW."]
     },
     {
       name: "NXT",
@@ -35,7 +35,7 @@ export class ShowService {
       colorButton: "rgb(255, 208, 66)",
       background: "assets/img/show_background/nxt.jpg",
       backgroundFull: "assets/img/show_background/nxt_full.jpg",
-      desc: ["NXT fue creado en 2010 con el objetivo de formar nuevas superestrellas para que puedan competir en los shows principales (RAW y SmackDown). Consistía en una competición con distintas pruebas para determinar el ganador. En 2012 cambiaron la estructura del evento y se convirtió en un show semanal con una estructura similar a la de los shows principales.", "Debido a la alta calidad de los combates y las rivalidades del programa y de la creciente popularidad del show, se estrenó en televisión en 2019."]
+      desc: ["\"NXT\" fue creado en 2010 con el objetivo de formar nuevas superestrellas para que puedan competir en los shows principales (RAW y SmackDown). Consistía en una competición con distintas pruebas para determinar el ganador. En 2012 cambiaron la estructura del evento y se convirtió en un show semanal con una estructura similar a la de los shows principales.", "Debido a la alta calidad de los combates y las rivalidades del programa y de la creciente popularidad del show, se estrenó en televisión en 2019."]
     },
     {
       name: "NXT UK",
@@ -85,7 +85,21 @@ export class ShowService {
     return this.shows;
   }
 
+  searchShow(search: string): Show[] {
+    let shows: Show[] = [];
+    search = search.toLowerCase();
+
+    for (let i = 0; i < this.shows.length; i++){
+      let name = this.shows[i].name.toLowerCase();
+      if ( name.indexOf(search) >= 0 ){
+        shows.push(this.shows[i]);
+      }
+    }
+    return shows;
+  }
+
 }
+
 export interface Show {
   name: string;
   logo: string;

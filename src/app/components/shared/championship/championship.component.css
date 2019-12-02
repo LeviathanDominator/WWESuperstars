@@ -5,9 +5,16 @@ div {
   border-style: solid;
   border-color: white;
   border-radius: 1em;
+  -webkit-filter: drop-shadow(0px 0px 6px white);
+  filter: drop-shadow(0px 0px 6px white);
 }
 
-h2 {
+.data {
+  padding: 1em;
+  font-weight: bold;
+}
+
+h1 {
   font-weight: bold;
   text-align: center;
 }
