@@ -1,6 +1,7 @@
 .championships{
     min-height: 100vh;
 }
+
 ul {
   margin: auto;
   display: flex;
