@@ -45,7 +45,7 @@ export class ShowService {
       colorButton: "rgb(237, 215, 71)",
       background: "assets/img/show_background/nxt_uk.jpg",
       backgroundFull: "assets/img/show_background/nxt_uk_full.jpg",
-      desc: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."]
+      desc: ["\"NXT\" dispone de una división europea llamada \"NXT UK\", donde compiten superestrellas de países europeos y luchan con un estilo de lucha libre más británico, centrándose más en llaves y agarres por encima de los ataques aereos. Comenzó a emitirse el 17 de octubre de 2018 y crearon distintos campeonatos cuando se creó la división.","El objetivo de \"NXT UK\" es conseguir que superestrellas europeas se den a conocer por el público americano, con la posibilidad de competir en las marcas principales."]
     },
     {
       name: "205 Live",
@@ -55,7 +55,7 @@ export class ShowService {
       colorButton: "rgb(132, 36, 255)",
       background: "assets/img/show_background/205_live.jpg",
       backgroundFull: "assets/img/show_background/205_live_full.jpg",
-      desc: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."]
+      desc: ["Después del gran éxito que supuso el torneo de peso crucero de WWE, decidieron crear un show aparte para que las superestrellas que pesen menos de 205 libras (93kg) compitan en su propio show con un estilo más ágil y rápido, creando así combates donde la espectacularidad es lo primero. A finales de noviembre de 2016 el show comenzó a emitirse cada semana justo después de \"SmackDown\".", "Por desgracia, debido a su horario, los espectadores de \"SmackDown\" se suelen encontrar demasiado cansados para ver una hora de 205 Live, al no centrarse tanto en las historias de las rivalidades de sus superestrellas. Por tanto, empezaron a insertar combates de \"205 Live\" entre algunos combates de \"RAW\" y \"SmackDown\". Se rumorea que están planeando cancelar el show y llevar el elenco de \"205 Live\" a \"NXT\", convirtiéndolo en otra división de la marca amarilla."]
     },
     {
       name: "Hall of Fame",
@@ -65,7 +65,7 @@ export class ShowService {
       colorButton: "rgb(255, 202, 43)",
       background: "assets/img/show_background/hof.jpg",
       backgroundFull: "assets/img/show_background/hof_full.jpg",
-      desc: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."]
+      desc: ["Las superestrellas que marcaron un antes y un después en la historia de la lucha libre profesional son reconocidas en la \"Hall of Fame\" de WWE. Ahí aparecen las superestrellas más relevantes de cualquiera de las distintas eras de WWE.","La \"Hall of Fame\" también incluye personas famosas que no son superestrellas, pero que se han visto involucrados en algunas historias, como Arnold Schwarzenegger o Donald Trump, pero que no se incluyen en esta base de datos. En su lugar he incluido en esta categoría superestrellas que ya no trabajan en WWE pero que han sido muy importantes para la industria, como Chris Jericho o Dean Ambrose."]
     }
   ];
 

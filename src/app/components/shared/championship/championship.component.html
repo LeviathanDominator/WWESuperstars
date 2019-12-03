@@ -1,4 +1,4 @@
-<div [ngStyle]="{'background': 'linear-gradient(' + championship.show.colorButton + ', ' + championship.show.color + ')'}">
+<div class="main" [ngStyle]="{'background': 'linear-gradient(' + championship.show.colorButton + ', ' + championship.show.color + ')'}">
   <img [src]="championship.image" [title]="championship.name + ' Championship'" [alt]="championship.name + ' Championship'">
   <h1>{{ championship.name | uppercase }} CHAMPIONSHIP</h1>
   <div class="data" [ngStyle]="{'background-color': championship.show.color}">

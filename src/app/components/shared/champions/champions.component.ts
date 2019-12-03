@@ -42,7 +42,6 @@ export class ChampionsComponent implements OnInit {
 
   getSuperstarImage( superstar: Superstar) {
     return superstar.img;
-    //return this._superstarsService.getSuperstar(superstar).img;
   }
 
   goToSuperstar( superstar: Superstar ) {

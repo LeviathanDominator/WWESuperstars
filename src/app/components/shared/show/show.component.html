@@ -12,7 +12,7 @@
   <h2>Campeonatos</h2>
   <div class="championships">
     <div class="championship" *ngFor="let championship of championships">
-      <p> {{championship.name}} Championship </p>
+      <h3> {{championship.name}} Championship </h3>
       <img (click)="goToChampionship(championship)" [src]="championship.image" [alt]="championship.name + ' Championship'" [title]="championship.name + ' Championship'">
     </div>
   </div>

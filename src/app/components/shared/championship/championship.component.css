@@ -1,17 +1,24 @@
-div {
+.main {
   display: flex;
   flex-direction: column;
   margin: 2em;
   border-style: solid;
-  border-color: white;
   border-radius: 1em;
   -webkit-filter: drop-shadow(0px 0px 6px white);
   filter: drop-shadow(0px 0px 6px white);
 }
 
 .data {
+  margin-bottom: 1em;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
   padding: 1em;
   font-weight: bold;
+}
+
+.main, .data {
+  border-color: white;
 }
 
 h1 {
@@ -32,4 +39,15 @@ button {
 
 button:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  h1, .data {
+    font-size: 0.8em;
+  }
+
+  .data {
+    font-size: 4vw;
+  }
+
 }

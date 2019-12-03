@@ -1,13 +1,14 @@
 ul {
-  margin-top: 1em;
-  display: flex;
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
 }
 
-li {
+ul, li, .superstars {
   display: flex;
+}
+
+li {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
@@ -28,8 +29,11 @@ li div {
   min-width: 0;
 }
 
-h3 {
+ul, h3 {
   margin-top: 1em;
+}
+
+h3 {
   text-shadow: 1px 1px 5px black;
 }
 
@@ -41,16 +45,19 @@ h5 {
   margin-bottom: auto;
 }
 
-.superstars {
-  display: flex;
-}
-
 img {
   width: 100%;
   transition: all .2s;
 }
 
 img:hover {
-  -webkit-filter: drop-shadow(0px 0px 3px white);
-  filter: drop-shadow(0px 0px 3px white);
+  -webkit-filter: drop-shadow(0 0 3px white);
+  filter: drop-shadow(0 0 3px white);
+}
+
+
+@media only screen and (max-width: 768px) {
+  ul {
+    margin: 0;
+  }
 }

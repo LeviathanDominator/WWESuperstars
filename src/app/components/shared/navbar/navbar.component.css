@@ -59,3 +59,9 @@ button:hover {
   color: rgb(28, 237, 17);
   background-color: black;
 }
+
+@media only screen and (max-width: 1024px) {
+  ul {
+    font-size: 2.3vw;
+  }
+}

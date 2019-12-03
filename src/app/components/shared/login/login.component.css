@@ -24,3 +24,22 @@ a {
   color: white;
   float: right;
 }
+
+@media only screen and (max-width: 768px) {
+  img {
+    height: 0;
+  }
+
+  h2 {
+    margin-top: 2em;
+  }
+
+  a, button {
+    margin: .6em;
+  }
+
+  form {
+    min-width: 100%;
+  }
+
+}
