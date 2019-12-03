@@ -4,12 +4,14 @@
   margin: 2em;
   border-style: solid;
   border-radius: 1em;
-  -webkit-filter: drop-shadow(0px 0px 6px white);
-  filter: drop-shadow(0px 0px 6px white);
+  text-align: center;
+  -webkit-filter: drop-shadow(0 0 6px white);
+  filter: drop-shadow(0 0 6px white);
 }
 
 .data {
   margin-bottom: 1em;
+  filter: brightness(65%);
   border-top-style: solid;
   border-bottom-style: solid;
   border-width: 2px;
@@ -23,7 +25,6 @@
 
 h1 {
   font-weight: bold;
-  text-align: center;
 }
 
 img {
@@ -35,10 +36,6 @@ button {
   margin: auto;
   margin-bottom: 2em;
   display: inline-block;
-}
-
-button:hover {
-  text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {

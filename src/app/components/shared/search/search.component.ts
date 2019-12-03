@@ -35,6 +35,7 @@ export class SearchComponent implements OnInit {
         case "show":
           this.searchResults = this._showService.searchShow(this.word)
       }
+      this.searchResults.sort((a, b) => a.name.localeCompare(b.name));
     });
   }
 

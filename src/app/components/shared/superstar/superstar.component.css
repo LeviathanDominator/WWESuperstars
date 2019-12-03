@@ -145,4 +145,8 @@ iframe {
     font-size: 4vw;
   }
 
+  .titleSmall {
+    max-width: 100%;
+  }
+
 }

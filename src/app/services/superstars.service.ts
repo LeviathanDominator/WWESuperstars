@@ -877,7 +877,7 @@ export class SuperstarsService {
       hometown: "Wichita Falls, Texas",
       height: 1.88,
       weight: 154,
-      finisher: "Ground Zero",
+      finisher: "Spirit Bomb",
       show: this._showService.getShow("2"),
       img: "assets/img/superstars/keith_lee.png",
       imgFull: "assets/img/superstars_full/keith_lee.png",

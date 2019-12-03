@@ -29,7 +29,3 @@ button {
   margin-right: 5em;
   margin-bottom: 1em;
 }
-
-button:hover {
-  text-decoration: underline;
-}

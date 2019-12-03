@@ -13,6 +13,8 @@ li:hover {
 h4, p {
   font-weight: bold;
   -webkit-text-stroke-color: black;
+  -webkit-filter: drop-shadow(0 0 2px black);
+  filter: drop-shadow(0 0 1px black);
 }
 
 h4 {
@@ -31,8 +33,4 @@ button {
   text-shadow: 1px 1px black;
   background-color: black;
   border-color: white;
-}
-
-button:hover {
-  text-decoration: underline;
 }

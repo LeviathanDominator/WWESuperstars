@@ -10,3 +10,7 @@ button {
   text-shadow: 1px 1px black;
   border-radius: .8em;
 }
+
+button:hover {
+  text-decoration: underline;
+}

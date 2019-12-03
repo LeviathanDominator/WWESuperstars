@@ -23,6 +23,9 @@ export class SuperstarComponent implements OnInit {
     this.activateRoute.params.subscribe(params => {
       this.superstar = this._superstarsService.getSuperstar(params['id']);
       this.videoURL = 'https://www.youtube.com/embed/' + this.superstar.music;
+
+      // Sanitizer is required to bypass security trust resource in URL.
+      // If this isn't applied video will not show up.
       this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(this.videoURL);
     });
   }
